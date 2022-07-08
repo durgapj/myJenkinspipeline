@@ -1,0 +1,7 @@
+FROM nginx
+LABEL "project"="vprofile"
+LABEL "author"="durga"
+
+RUN rm -rf  /etc/nginx/conf.d/default.conf
+COPY nginvpro.conf /etc/nginx/conf.d
+
